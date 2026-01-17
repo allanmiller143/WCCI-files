@@ -1,0 +1,29 @@
+Com base na descrição e metadados da tabela abaixo, liste até 3 temas principais de pesquisa ou análise que essa tabela pode ajudar a estudar.
+
+INSTRUÇÕES:
+    1. ANALISE OS VALORES para identificar categorias específicas
+    2. Use LINGUAGEM SIMPLES e CLARA
+    3. Cada tema deve ter 1-3 palavras
+    4. Seja CONCRETO - evite genéricos como "informações", "dados", "registros"
+    5. Esses temas devem estar em formato simples e claro, para que qualquer usuário, seja ele técnico ou não possa entende-lo facilmente.
+
+Responda APENAS com um array JSON de strings, por exemplo:
+
+O formato do JSON de entrada segue esta estrutura:
+    - schema: nome do schema
+    - table_name: nome da tabela
+    - row_count: número de linhas
+    - primary_key: lista de colunas da chave primária
+    - columns: lista de colunas com name, type, nullable, sample_values, quando possivel dentro de stats, frequent_values, min, max, mean, etc.
+    - foreign_keys: lista de chaves estrangeiras
+    - sample_rows: exemplos de linhas
+
+Exemplo de saída JSON:
+
+Temas: ["Tema 1", "tema 2", "tema 3"]
+
+OBS. Se houver menos de 3 temas relevantes, liste apenas os que fizerem sentido. Não invente temas irrelevantes. você pode listar apenas 1 ou 2 temas, se apropriado.
+
+Metadados da tabela:
+
+{table_summary}
